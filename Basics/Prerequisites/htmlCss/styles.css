@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #eaebed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #001f29;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #66a5b8;
+}
+
+#logo {
+  width: auto;
+  height: 60px;
+}
+
+.navbar-1,
+.navbar-2 {
+  padding: 0.25em;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 0.8em;
+  margin: 0 1em;
+  width: 140em;
+  border-style: none;
+  background-color: #c8d6db;
+  border-radius: 1.6em;
+}
+
+.navbar-el {
+  margin: 0 0.6em;
+}
+
+.navbar-el-special {
+  background: linear-gradient(to right, #e975a8, #726cf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-el-extra {
+  padding: 0.2em 2em;
+  border: 0.1em solid #e975a8;
+  border-radius: 2em;
+}
+
+.submit-photo {
+  padding: 0.5em 2em;
+  border-style: none;
+  border-radius: 1em;
+  background-color: #c8d6db;
+  color: #e975a8;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.submit-photo:hover {
+  background-color: #bfcfd5;
+}
+
+.navbar-2 {
+  padding: 1em;
+  border-bottom: 0.1em solid #99c3d0;
+}
+
+.navbar-current {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #006989;
+}
+
+.main {
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  padding-top: 5em;
+  position: absolute;
+  left: 40%;
+  margin: -1em 0 0 -1em;
+}
+
+.heading {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.sub-heading {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+#trending {
+  margin: 2em 0;
+}
+
+.search-inp {
+  padding: 1em;
+  width: 30em;
+  border-style: none;
+  background-color: #c8d6db;
+  border-radius: 1em;
+}
+
+.image-section {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  margin: 25em 0 0 -1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.display-images {
+  width: auto;
+  height: 20em;
+  margin: 1em 0;
+  border-radius: 0.5em;
+}
+
+.display-images:hover {
+  filter: grayscale(100%);
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: #c8d6db;
+  padding: 1em;
+}
+
+.img-detail {
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 70%
+  );
+  padding: 1em 2em;
+}
+
+.img-1,
+.img-2 {
+  top: 75%;
+  left: 10%;
+}
+
+.img-2 {
+  top: 80%;
+}
