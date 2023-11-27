@@ -23,9 +23,9 @@ function checkParenthesis(str) {
   );
 }
 
-// console.log(checkParenthesis("()"));
-// console.log(checkParenthesis("()[]{}"));
-// console.log(checkParenthesis("(]"));
+console.log(checkParenthesis("()"));
+console.log(checkParenthesis("()[]{}"));
+console.log(checkParenthesis("(]"));
 
 // A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 // Given a string s, return true if it is a palindrome, or false otherwise.
@@ -40,9 +40,9 @@ function palindrome(str) {
   return reversedStr.join("") === str ? true : false;
 }
 
-// console.log(palindrome("A man, a plan, a canal: Panama"));
-// console.log(palindrome("race a car"));
-// console.log(palindrome(" "));
+console.log(palindrome("A man, a plan, a canal: Panama"));
+console.log(palindrome("race a car"));
+console.log(palindrome(" "));
 
 // Write a function that reverses a string. The input string is given as an array of characters s.
 // You must do this by modifying the input array in-place with O(1) extra memory.
@@ -66,7 +66,7 @@ function countOccurances(str) {
   return counts;
 }
 
-// console.log(validAnagram("anagram", "nagaram"));
-// console.log(validAnagram("rat", "car"));
+console.log(validAnagram("anagram", "nagaram"));
+console.log(validAnagram("rat", "car"));
 
 // Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
