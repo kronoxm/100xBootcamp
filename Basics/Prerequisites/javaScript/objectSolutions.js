@@ -23,8 +23,8 @@ const person = {
 const deepCopy = (obj) => JSON.parse(JSON.stringify(obj));
 const copiedPerson = deepCopy(person);
 
-// console.log(person.hobbies[1]);
-// console.log(copiedPerson.hobbies[1]);
+console.log(person.hobbies[1]);
+console.log(copiedPerson.hobbies[1]);
 
 // Question-2:  Write a function that takes two objects and returns an object containing the common key-value pairs.
 
@@ -63,7 +63,7 @@ function commonKeyVal(obj1, obj2) {
   return commonPairs;
 }
 
-// console.log(commonKeyVal(book, movie));
+console.log(commonKeyVal(book, movie));
 
 // Question-3:  Create a function that transforms an object by renaming its keys based on a provided mapping. The function should handle nested objects. For example:
 // input: { firstName: 'John', address: { city: 'New York' } }
