@@ -75,6 +75,34 @@ console.log(commonKeyVal(book, movie));
 // schema: { name: 'string', age: 'number', email: 'string', address: 'string?' }
 // valid output: true
 
+const objCheck = { name: "John", age: 25, email: "john@example.com" };
+const schema = {
+  name: "string",
+  age: "number",
+  email: "string",
+  address: "string?",
+};
+
+function validateObjSchema(object, schema) {
+  for (const key in schema) {
+    const expectedType = schema[key];
+    const actualValue = object[key];
+    if (expectedType.endsWith("?") && actualValue === undefined) {
+      continue;
+    }
+    if (!expectedType.endsWith("?") && actualValue === undefined) {
+      return false;
+    }
+    const actualType = typeof actualValue;
+    if (actualType !== expectedType.replace("?", "")) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(validateObjSchema(objCheck, schema));
+
 // Question-5:  Create a function that merges two objects. If there are conflicts in values, allow for custom logic to determine the merged result. For example:
 // object1: { a: 1, b: 2 }
 // object2: { b: 3, c: 4 }
