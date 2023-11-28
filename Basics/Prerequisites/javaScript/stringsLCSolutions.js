@@ -162,3 +162,27 @@ function commonPrefix(arr) {
 }
 
 console.log(commonPrefix(["hello", "hero"]));
+
+// Question-10
+// Given a valid (IPv4) IP address, return a defanged version of that IP address.
+// A defanged IP address replaces every period "." with "[.]".
+
+function defangedIP(address) {
+  return address.replaceAll(".", "[.]");
+}
+
+console.log(defangedIP("1.1.1.1"));
+console.log(defangedIP("255.100.50.0"));
+
+// Question-11
+// You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer than the other, append the additional letters onto the end of the merged string.
+
+function mergeAlternativeStr(str1, str2) {
+  return Array.from(
+    str1.length > str2.length ? str1 : str2,
+    (_, i) => (str1[i] || "") + (str2[i] || "")
+  ).join("");
+}
+
+console.log(mergeAlternativeStr("abc", "pqr"));
+console.log(mergeAlternativeStr("ab", "pqrst"));
