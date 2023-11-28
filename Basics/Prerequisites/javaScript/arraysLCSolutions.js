@@ -129,3 +129,13 @@ function getKeyByValue(object, value) {
 
 console.log(majorityElement([3, 2, 3]));
 console.log(majorityElement([2, 2, 1, 1, 1, 2, 2]));
+
+// Question-9
+// Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
+
+function insertionArr(arr1, arr2) {
+  return arr1.filter((value) => arr2.includes(value));
+}
+
+console.log(insertionArr([1, 2, 2, 1], [2, 2]));
+console.log(insertionArr([4, 9, 5], [9, 4, 9, 8, 4]));
