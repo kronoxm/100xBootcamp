@@ -24,9 +24,9 @@ function checkParenthesis(str) {
   );
 }
 
-// console.log(checkParenthesis("()"));
-// console.log(checkParenthesis("()[]{}"));
-// console.log(checkParenthesis("(]"));
+console.log(checkParenthesis("()"));
+console.log(checkParenthesis("()[]{}"));
+console.log(checkParenthesis("(]"));
 
 // Question-2
 // A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
@@ -42,9 +42,9 @@ function palindrome(str) {
   return reversedStr.join("") === str ? true : false;
 }
 
-// console.log(palindrome("A man, a plan, a canal: Panama"));
-// console.log(palindrome("race a car"));
-// console.log(palindrome(" "));
+console.log(palindrome("A man, a plan, a canal: Panama"));
+console.log(palindrome("race a car"));
+console.log(palindrome(" "));
 
 // Question-3
 // Write a function that reverses a string. The input string is given as an array of characters s.
@@ -53,8 +53,8 @@ function reversedStr(arr) {
   return arr.reverse();
 }
 
-// console.log(reversedStr(["h", "e", "l", "l", "o"]));
-// console.log(reversedStr(["H", "a", "n", "n", "a", "h"]));
+console.log(reversedStr(["h", "e", "l", "l", "o"]));
+console.log(reversedStr(["H", "a", "n", "n", "a", "h"]));
 
 // Question-4
 // Given two strings s and t, return true if t is an anagram of s, and false otherwise.
@@ -74,8 +74,8 @@ function countOccurances(str) {
   return counts;
 }
 
-// console.log(validAnagram("anagram", "nagaram"));
-// console.log(validAnagram("rat", "car"));
+console.log(validAnagram("anagram", "nagaram"));
+console.log(validAnagram("rat", "car"));
 
 // Question-5
 // Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
@@ -95,9 +95,9 @@ function uniqueChars(str) {
   return arr.length != 0 ? str.indexOf(arr[0]) : -1;
 }
 
-// console.log(uniqueChars("leetcode"));
-// console.log(uniqueChars("loveleetcode"));
-// console.log(uniqueChars("aabb"));
+console.log(uniqueChars("leetcode"));
+console.log(uniqueChars("loveleetcode"));
+console.log(uniqueChars("aabb"));
 
 // Question-6
 // Given a roman numeral, convert it to an integer.
@@ -127,7 +127,7 @@ function romanToInt(romanNum) {
   return result;
 }
 
-// console.log(romanToInt("XM"));
+console.log(romanToInt("XM"));
 
 // Question-7
 // Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.
@@ -136,9 +136,9 @@ function excelColToNumber(letters) {
   return letters.split("").reduce((r, a) => r * 26 + parseInt(a, 36) - 9, 0);
 }
 
-// console.log(excelColToNumber("A"));
-// console.log(excelColToNumber("AB"));
-// console.log(excelColToNumber("ZYA"));
+console.log(excelColToNumber("A"));
+console.log(excelColToNumber("AB"));
+console.log(excelColToNumber("ZYA"));
 
 // Question-8
 // Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
@@ -147,8 +147,8 @@ function firstOccurances(haystack, needle) {
   return haystack.includes(needle) ? haystack.indexOf(needle) : -1;
 }
 
-// console.log(firstOccurances((haystack = "sadbutsad"), (needle = "sad")));
-// console.log(firstOccurances((haystack = "leetcode"), (needle = "leeto")));
+console.log(firstOccurances((haystack = "sadbutsad"), (needle = "sad")));
+console.log(firstOccurances((haystack = "leetcode"), (needle = "leeto")));
 
 // Question-9
 // Write a function to find the longest common prefix string amongst an array of strings.
@@ -161,4 +161,4 @@ function commonPrefix(arr) {
   return arr[0].substr(0, i);
 }
 
-// console.log(commonPrefix(["hello", "hero"]));
+console.log(commonPrefix(["hello", "hero"]));
