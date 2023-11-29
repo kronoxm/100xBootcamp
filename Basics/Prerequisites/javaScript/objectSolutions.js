@@ -70,6 +70,42 @@ console.log(commonKeyVal(book, movie));
 // mapping: { firstName: 'name', address: { city: 'location.city' } }
 // output: { name: 'John', location: { city: 'New York' } }
 
+function transformObject(input, mapping) {
+  const output = {};
+
+  function transformKeys(obj, map, outputObj) {
+    for (const key in map) {
+      if (typeof map[key] === "object") {
+        outputObj[key] = {};
+        transformKeys(obj[key] || {}, map[key], outputObj[key]);
+      } else {
+        const keys = map[key].split(".");
+        let value = obj;
+        for (const k of keys) {
+          if (value && typeof value === "object" && k in value) {
+            value = value[k];
+          } else {
+            value = undefined;
+            break;
+          }
+        }
+        outputObj[key] = value !== undefined ? value : obj[key];
+      }
+    }
+  }
+
+  transformKeys(input, mapping, output);
+
+  return output;
+}
+
+// Example usage:
+const input = { firstName: "John", address: { city: "New York" } };
+const mapping = { firstName: "name", address: { city: "location.city" } };
+const output = transformObject(input, mapping);
+
+console.log(output);
+
 // Question-4:  Write a function that validates an object against a provided schema. The schema should define the expected structure, data types, and optional/required fields. For example:
 // object: { name: 'John', age: 25, email: 'john@example.com' }
 // schema: { name: 'string', age: 'number', email: 'string', address: 'string?' }
