@@ -112,7 +112,7 @@ input::-webkit-inner-spin-button {
   padding-bottom: 1em;
 }
 
-.returns-form {
+#returns-form {
   text-align: start;
   padding: 0 5em;
 }
@@ -146,7 +146,7 @@ label {
   outline: none;
 }
 
-.calc-returns-btn {
+#calc-returns-btn {
   margin-top: 2em;
   padding: 1em;
   width: 100%;
