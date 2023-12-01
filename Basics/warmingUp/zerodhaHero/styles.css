@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #343434;
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-row;
+  vertical-align: middle;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.nav,
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  padding: 1em;
+  -webkit-box-shadow: 0 4px 16px -16px black;
+  -moz-box-shadow: 0 4px 16px -16px black;
+  box-shadow: 0 4px 16px -16px black;
+}
+
+#logo {
+  margin-right: auto;
+}
+
+.logo-img {
+  width: 10vh;
+}
+
+.nav-bar > div {
+  padding: 1em;
+  border-bottom: 0px;
+  color: gray;
+  font-weight: 400;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  padding-top: 10em;
+  width: 100vh;
+}
+
+.hero-header {
+  text-align: center;
+}
+
+.hero-main {
+  font-size: 3em;
+  padding-top: 1em;
+}
+.hero-tag {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 1em;
+  font-weight: 400;
+  padding-bottom: 3em;
+  letter-spacing: 1px;
+}
+
+.hero-btn {
+  border: none;
+  padding: 0.5em 2em;
+  background-color: #387ed1;
+  border-radius: 0.25em;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+}
+
+.hero-btn:hover {
+  background-color: #224c7d;
+}
+
+.calc-returns {
+  margin: 10em 0;
+  padding: 5em 0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5em;
+}
+
+.returns-header {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.returns-form {
+  text-align: start;
+  padding: 0 5em;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+#capital,
+#interest,
+#years {
+  width: 100%;
+  padding: 0.75em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid lightblue;
+}
+
+#capital:focus,
+#interest:focus,
+#years:focus {
+  border: none;
+  border-bottom: 2px solid blue;
+  outline: none;
+}
+
+.calc-returns-btn {
+  margin-top: 2em;
+  padding: 1em;
+  width: 100%;
+  font-size: 1em;
+  color: white;
+  background-color: #387ed1;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.calc-returns-btn:hover {
+  background-color: #224c7d;
+}
