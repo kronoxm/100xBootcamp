@@ -41,6 +41,18 @@ input::-webkit-inner-spin-button {
   box-shadow: 0 4px 16px -16px black;
 }
 
+.nav-bar > div > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: gray;
+  font-weight: 400;
+}
+
+.nav-bar > div > a:hover {
+  color: darkgray;
+  text-decoration: underline;
+}
+
 #logo {
   margin-right: auto;
 }
@@ -52,8 +64,6 @@ input::-webkit-inner-spin-button {
 .nav-bar > div {
   padding: 1em;
   border-bottom: 0px;
-  color: gray;
-  font-weight: 400;
 }
 
 .hero {
