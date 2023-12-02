@@ -161,3 +161,23 @@ label {
 .calc-returns-btn:hover {
   background-color: #224c7d;
 }
+
+.final-amount-div {
+  padding: 2em 0;
+  align-items: center;
+  font-size: 1.4em;
+}
+
+.final-amount-div > p {
+  margin-bottom: 0.5em;
+  color: #224c7d;
+  font-weight: 700;
+}
+
+#final-amount {
+  padding: 1em;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  background-color: #91a6be;
+}

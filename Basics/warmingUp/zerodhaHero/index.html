@@ -41,44 +41,19 @@
     <section class="calc-returns">
       <p class="returns-header">Calculate Returns</p>
       <form method="post" id="returns-form" name="returns-form">
-        <div>
-          <label for="capital">Capital</label>
-          <input
-            type="number"
-            placeholder="Capital amount"
-            id="capital"
-            name="capital"
-          />
-        </div>
-        <div>
-          <label for="years">Years</label>
-          <input
-            type="number"
-            placeholder="No. of years"
-            id="years"
-            name="years"
-          />
-        </div>
-        <div>
-          <label for="interest">Interest</label>
-          <input
-            type="number"
-            placeholder="Interest rate"
-            id="interest"
-            name="interest"
-          />
-        </div>
-        <div>
-          <input
-            type="submit"
-            value="Calculate"
-            name="submit"
-            id="calc-returns-btn"
-          />
-        </div>
+        <label for="capital">Capital</label>
+        <input type="number" placeholder="Capital amount" id="capital" />
+        <label for="years">Years</label>
+        <input type="number" placeholder="No. of years" id="years" />
+        <label for="interest">Interest</label>
+        <input type="number" placeholder="Interest rate" id="interest" />
+        <button type="button" onclick="getVals()" id="calc-returns-btn">
+          Calculate
+        </button>
       </form>
-      <div>
-        <b>Total Accumulated Amount: </b> <label id="final-amount"></label>
+      <div class="final-amount-div">
+        <p>Total Accumulated Amount</p>
+        <div id="final-amount">0.0</div>
       </div>
     </section>
 
