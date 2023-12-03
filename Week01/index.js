@@ -1,3 +1,5 @@
+// const overWrite = require("ansi-escapes");
+import ansiEscapes from "ansi-escapes";
 // console.log("Hello World!");
 
 // const a = "New Hello World!";
@@ -131,6 +133,23 @@ function countInterval() {
   }
   return;
 }
-const counterInterval = setInterval(countInterval, 100);
+// const counterInterval = setInterval(countInterval, 1000);
 
 // Calculate the time it takes between a setTimeout call and the inner function actually running
+
+// Create a terminal clock (HH:MM:SS)
+
+function currentTime(addZero) {
+  const date = new Date();
+  return `${addZero(date.getHours())}:${addZero(date.getMinutes())}:${addZero(
+    date.getSeconds()
+  )}`;
+}
+
+function leftZero(num) {
+  return num < 10 ? "0" + String(num) : String(num);
+}
+
+const runCurTime = setInterval(() => {
+  process.stdout.write(ansiEscapes.eraseLines(1) + currentTime(leftZero));
+}, 1000);
