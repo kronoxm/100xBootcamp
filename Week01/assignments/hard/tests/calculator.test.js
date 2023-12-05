@@ -1,4 +1,4 @@
-const Calculator = require("../hard/calculator");
+const Calculator = require("../solutions/calculatorStack");
 
 describe("Calculator", () => {
   let calc;

@@ -5,7 +5,7 @@
     - update(index, updatedTodo): update todo at given index [*]
     - getAll: returns all todos [*]
     - get(indexOfTodo): returns todo at given index [*]
-    - clear: deletes all todos
+    - clear: deletes all todos [*]
 
   Once you've implemented the logic, test your code by running
 */
