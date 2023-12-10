@@ -4,6 +4,7 @@
 const fs = require("fs");
 
 const writeDataToFile = (data) => data;
+
 fs.writeFile(
   "./data/sample.txt",
   writeDataToFile("Hello world from write"),
